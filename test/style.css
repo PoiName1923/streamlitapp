@@ -1,0 +1,42 @@
+/* Điều chỉnh kích thước và vị trí hình ảnh */
+.song-image {
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Điều chỉnh kiểu cho tiêu đề bài hát */
+.song-title {
+    font-size: 1.5em;
+    color: #1db954;
+    /* Màu của Spotify */
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Điều chỉnh kiểu cho tên nghệ sĩ */
+.artist-name {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Điều chỉnh kiểu cho liên kết Spotify */
+.spotify-link {
+    font-size: 1.1em;
+    color: #1db954;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.spotify-link:hover {
+    text-decoration: underline;
+}
+
+/* Điều chỉnh kiểu cho âm thanh */
+.audio-player {
+    margin-top: 15px;
+}

@@ -1,0 +1,62 @@
+[data-testid="stAppViewContainer"] {
+    background-image: url("https://images.pexels.com/photos/695971/pexels-photo-695971.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: center; */
+}
+
+/* CSS để thay đổi kiểu dáng của form */
+.stForm {
+    position: fixed;
+    left: 20px;
+    top: 350px;
+    width: 320px;
+    padding: 20px;
+    border: 3px solid rgb(85, 29, 29, 0.6);
+    border-radius: 10px;
+    background-color: rgba(193, 180, 180, 0.5);
+}
+
+/* Thay đổi vị trí title */
+
+h1 {
+    max-width: 600px;
+    position: fixed;
+    padding: 0px;
+    top: 100px;
+    left: 100px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+/* Thay đổi vị trí subheader */
+h2 {
+    position: fixed;
+    text-align: left;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 20px;
+    top: 240px;
+    left: 120px;
+}
+
+
+
+
+/* CSS cho các widget bên trong form */
+.stTextInput,
+.stNumberInput,
+.stSelectbox {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.stButton {
+    background-color: rgba(193, 180, 180, 0.8);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%;
+}
