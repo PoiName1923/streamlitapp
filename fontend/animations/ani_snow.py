@@ -28,4 +28,14 @@ def snow_ani(snow_icon):
             <div class = "snowflake">{snow_icon}</div>
             <div class = "snowflake">{snow_icon}</div>
             <div class = "snowflake">{snow_icon}</div>
+            <div class = "snowflake">{snow_icon}</div>
+            <div class = "snowflake">{snow_icon}</div>
+            <div class = "snowflake">{snow_icon}</div>
+            <div class = "snowflake">{snow_icon}</div>
+            <div class = "snowflake">{snow_icon}</div>
+            <div class = "snowflake">{snow_icon}</div>
+            <div class = "snowflake">{snow_icon}</div>
+            <div class = "snowflake">{snow_icon}</div>
+            <div class = "snowflake">{snow_icon}</div>
+            <div class = "snowflake">{snow_icon}</div>
             """,unsafe_allow_html=True)
