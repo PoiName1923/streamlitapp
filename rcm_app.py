@@ -1,5 +1,5 @@
 import streamlit as st
-from fontend.screens import home_page 
+from fontend.screens import mananger_page 
 
 
 # Khởi tạo session state
@@ -12,8 +12,8 @@ if "search" not in st.session_state:
     
 # Hiển thị trang tương ứng
 if st.session_state.page == "home":
-    home_page.home_page()
+    mananger_page.home_page()
 elif st.session_state.page == "search_by_name":
-    home_page.search_by_name_page()
+    mananger_page.search_by_name_page()
 elif st.session_state.page == "search_by_mood":
-    home_page.search_by_mood_page()
+    mananger_page.search_by_mood_page()

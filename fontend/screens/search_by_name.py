@@ -8,16 +8,17 @@ class SearchByName:
     def search_page(self):
         song_name = st.text_input("Search for a song:", placeholder="Enter song name here...")
         if song_name:
-            data = search_track_Snowflake(song_name.strip())
-            if data.empty:
-                st.warning("No songs found!")
-            else:
-                st.write("### Search Results:")
-                for _, song in data.iterrows():
-                    # Tạo một nút cho mỗi bài hát
-                    if st.button(f"{song['TRACK_NAME']} - {song['ARTIST_NAME']}", key=song['TRACK_ID']):
-                        st.session_state.search['selected_song'] = song.to_dict()
-                        st.rerun()
+            with st.spinner("We are finding your track!🕛"):
+                data = search_track_Snowflake(song_name.strip())
+                if data.empty:
+                    st.warning("No songs found!")
+                else:
+                    st.write("### Search Results:")
+                    for _, song in data.iterrows():
+                        # Tạo một nút cho mỗi bài hát
+                        if st.button(f"{song['TRACK_NAME']} - {song['ARTIST_NAME']}", key=song['TRACK_ID']):
+                            st.session_state.search['selected_song'] = song.to_dict()
+                            st.rerun()
         if st.button("Back to Home",key="back_home_search_home"):
             del st.session_state.search
             st.session_state.page = "home"

@@ -9,7 +9,7 @@ def home_page():
     with open("fontend/css/style_main.css", encoding='utf-8') as f:
         style = f.read()
     st.markdown(f'<style>{style}</style>', unsafe_allow_html=True)
-    snow_ani('❄️')
+    snow_ani('❄')
     st.markdown("<h1>🎶 Welcome to Music Recommendation App! 🎶</h1>", unsafe_allow_html=True)
     st.markdown("<h2>Discover your favorite songs and artists here!</h2>", unsafe_allow_html=True)
     
@@ -34,10 +34,10 @@ def search_by_mood_page():
     ## Tạo đối tượng từ lớp SearchByMood
     search_app = search_by_mood_genres.SearchByMood()
     if st.session_state.search_by_mood['selected_songs']:
-        snow_ani('❄️')
+        snow_ani('❄')
         search_app.display_results()
     else:
-        snow_ani('❄️')
+        snow_ani('❄')
         search_app.search_page()
         
 def search_by_name_page():
@@ -51,8 +51,8 @@ def search_by_name_page():
     ## Tạo đối tượng từ lớp SearhcByName
     search_app = search_by_name.SearchByName()
     if "selected_song" in st.session_state.search:
-        snow_ani('❄️')
+        snow_ani('❄')
         search_app.display_results()
     else:
-        snow_ani('❄️')
+        snow_ani('❄')
         search_app.search_page()
