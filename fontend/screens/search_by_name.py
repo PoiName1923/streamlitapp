@@ -6,6 +6,7 @@ class SearchByName:
         if 'search' not in st.session_state:
             st.session_state.search = {}
     def search_page(self):
+        st.title("🔍 Search Songs by Name 🔍")
         song_name = st.text_input("Search for a song:", placeholder="Enter song name here...")
         if song_name:
             with st.spinner("We are finding your track!🕛"):

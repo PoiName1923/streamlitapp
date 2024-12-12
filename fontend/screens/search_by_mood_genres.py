@@ -7,6 +7,7 @@ class SearchByMood:
         if 'search_by_mood' not in st.session_state:
             st.session_state.search_by_mood = {'selected_songs': []}
     def search_page(self):
+        st.title("🔍 Search Songs by Mood and Genre 🔍")
         # Input fields for genres and mood
         genres = st.text_input("Choose your favourite genres:", placeholder="e.g., pop, jazz")
         mood = st.radio("Choose your mood today!", options=["Happy", "Sad", "Neutral"])
@@ -33,6 +34,7 @@ class SearchByMood:
         if not songs:
             st.warning("No songs to display.")
             return
+        
         # Loop through and display each song
         for song in songs:
                 picture_line, info_line = st.columns([1, 4])
@@ -45,6 +47,7 @@ class SearchByMood:
                     st.write(f"**Artist**: {song['ARTIST_NAME']}")
                     st.write(f"**Spotify**: [Link]({song['URL']})")
                 st.audio(song['PREVIEW'], format="audio/mp3")
+
         # Back button to return to search page
         if st.button("Back to Search",key = "back_to_search"):
             if 'search_by_mood' in st.session_state:

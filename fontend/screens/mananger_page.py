@@ -10,8 +10,8 @@ def home_page():
         style = f.read()
     st.markdown(f'<style>{style}</style>', unsafe_allow_html=True)
     snow_ani('❄')
-    st.markdown("<h1>🎶 Welcome to Music Recommendation App! 🎶</h1>", unsafe_allow_html=True)
-    st.markdown("<h2>Discover your favorite songs and artists here!</h2>", unsafe_allow_html=True)
+    st.title("🎶 Welcome to Music Recommendation App! 🎶")
+    st.subheader("Discover your favorite songs and artists here!")
     
     ## Hiển thị các nút và nhận biết nút được bấm để chuyển trang
     with st.form(key='my_form'):
@@ -26,7 +26,6 @@ def home_page():
 
 def search_by_mood_page():
     ## Dùng để thêm các đối tượng css vào trong trang này
-    st.title("🎵 Search Songs by Mood and Genre 🎵")
     with open("fontend/css/style_search_by_mg.css", encoding='utf-8') as f:
         style = f.read()
     st.markdown(f'<style>{style}</style>', unsafe_allow_html=True)
@@ -43,7 +42,6 @@ def search_by_mood_page():
 def search_by_name_page():
     
     ## Dùng để thêm các đối tượng css vào trong trang này
-    st.title("🔍 Search Songs by Name")
     with open("fontend/css/style_search_by_n.css", encoding='utf-8') as f:
         style = f.read()
     st.markdown(f'<style>{style}</style>', unsafe_allow_html=True)
